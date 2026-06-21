@@ -17,7 +17,7 @@ A Python program that simulates basic molecular biology processes.
 <img width="336" height="385" alt="Screenshot 2026-06-21 at 1 04 02 AM" src="https://github.com/user-attachments/assets/8c3a0820-c5d4-489e-b00c-0fe52c56b551" />
 
 
-
+---------------------
 
 
 
