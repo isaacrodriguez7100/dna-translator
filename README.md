@@ -2,14 +2,15 @@
 A Python program that simulates basic molecular biology processes.
 ## Features
 - DNA validation
+- DNA sequence statistics (base counts + GC/AT content)
 - DNA → mRNA transcription
 - Codon-based translation to amino acids
-- DNA sequence statistics (base counts + GC/AT content)
-
-## Future improvements
 - Start codon detection (AUG)
 - Stop codon termination
 - Reading frame analysis
+
+## Future improvements
+- Identification and output of where coding region was found
 - FASTA file input support
 
 ## Examples
