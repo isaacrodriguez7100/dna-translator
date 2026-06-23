@@ -10,7 +10,7 @@ A Python program that simulates basic molecular biology processes.
 - Reading frame analysis
 
 ## Future improvements
-- Identification and output of where coding region was found
+- Display sequence continuation after coding region
 - FASTA file input support
 
 ## Examples
