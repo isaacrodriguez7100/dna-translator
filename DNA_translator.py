@@ -2,7 +2,6 @@
 # 1. DNA --> mRNA transcription
 # 2. Read codons and convert to amino acids
 # 3. Sequence statistics: length, amount of individual bases, GC content, AT content
-import sys
 while True:
     DNA_string = input("Input DNA sequence: ").upper().strip().replace(" ","")
     if not DNA_string or not all(letter in "ATCG" for letter in DNA_string):
