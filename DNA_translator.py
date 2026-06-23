@@ -92,22 +92,35 @@ while True:
                 codons = []
                 for i in range(start_frame, len(mRNA), 3):
                     codons.append(mRNA[i:i + 3])
-                protein_coding_region = " ".join(codons)
+                open_reading_frame = " ".join(codons)
 
-                amino_acid = []
+                num_char_in_protein_coding_region = -1
+                protein_coding_region = []
                 for codon in codons:
-                    codon = CODON_LIBRARY.get(codon.upper(), "Incomplete codon")
+                    codon = CODON_LIBRARY.get(codon.upper(), "Unknown codon")
+                    num_char_in_protein_coding_region += 4
                     if codon == "STOP":  # stops at the end of codding region
                         break
 
-                    amino_acid.append(codon)
-                amount_protein = len(amino_acid)
-                #formatting
-                protein_sequence = " ".join(amino_acid)
-                num_char_in_protein_coding_region = len(protein_coding_region) + 2
-                format_present_protein_sequence = (" " * start_frame) + ("^" * num_char_in_protein_coding_region)
+                    protein_coding_region.append(codon)
+                #data
+                amount_protein = len(protein_coding_region)
 
-                print(f"Your mRNA sequence is: {mRNA[0:start_frame]} {protein_coding_region}")
+                utr_5 = mRNA[:start_frame]
+                remainder = len(utr_5) % 3
+                remainder_bases = mRNA[:remainder]
+                utr_5_grouping = []
+                for x in range(remainder, len(utr_5), 3):
+                    utr_5_grouping.append(utr_5[x:x+3])
+                utr_5_final = " ".join(utr_5_grouping)
+
+                utr_3 = "TBD"
+                #formatting
+                protein_sequence = " ".join(protein_coding_region)
+                num_char_in_utr_5_final = len(utr_5_final) + remainder + 2
+                format_present_protein_sequence = (" " * num_char_in_utr_5_final) + ("^" * num_char_in_protein_coding_region)
+
+                print(f"Your mRNA sequence is: {remainder_bases} {utr_5_final} {open_reading_frame}")
                 print(f"Protein coding region: {format_present_protein_sequence}")
                 print(f"Your proteins are: {protein_sequence}")
                 print(f"Amount of Proteins: {amount_protein}")
