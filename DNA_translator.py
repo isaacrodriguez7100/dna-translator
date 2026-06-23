@@ -97,17 +97,20 @@ while True:
                 amino_acid = []
                 for codon in codons:
                     codon = CODON_LIBRARY.get(codon.upper(), "Incomplete codon")
-                    amino_acid.append(codon)
                     if codon == "STOP":  # stops at the end of codding region
                         break
 
+                    amino_acid.append(codon)
+                amount_protein = len(amino_acid)
+                #formatting
                 protein_sequence = " ".join(amino_acid)
-                num_char_in_protein_sequence = len(protein_sequence) + 1
-                format_present_protein_sequence = (" " * start_frame) + ("^" * num_char_in_protein_sequence)
+                num_char_in_protein_coding_region = len(protein_coding_region) + 2
+                format_present_protein_sequence = (" " * start_frame) + ("^" * num_char_in_protein_coding_region)
 
                 print(f"Your mRNA sequence is: {mRNA[0:start_frame]} {protein_coding_region}")
                 print(f"Protein coding region: {format_present_protein_sequence}")
                 print(f"Your proteins are: {protein_sequence}")
+                print(f"Amount of Proteins: {amount_protein}")
 
             break
         else:
