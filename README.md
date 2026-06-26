@@ -8,18 +8,16 @@ A Python program that simulates basic molecular biology processes.
 - Start codon detection (AUG)
 - Stop codon termination
 - Reading frame analysis
+- Display sequence continuation after coding region
 
 ## Future improvements
-- Display sequence continuation after coding region
 - FASTA file input support
+- .txt file inpur support
 
 ## Examples
 
-<img width="336" height="385" alt="Screenshot 2026-06-21 at 1 04 02 AM" src="https://github.com/user-attachments/assets/8c3a0820-c5d4-489e-b00c-0fe52c56b551" />
-
+<img width="464" height="378" alt="Screenshot 2026-06-26 at 4 39 53 PM" src="https://github.com/user-attachments/assets/a694a491-b5d0-4f5e-bff0-8a66ca79ba8e" />
 
 -----------
 
-
-
-<img width="324" height="147" alt="Screenshot 2026-06-21 at 1 03 17 AM" src="https://github.com/user-attachments/assets/35162b8f-1ed0-433b-a12a-a61f94fa162c" />
+<img width="586" height="190" alt="Screenshot 2026-06-26 at 4 39 16 PM" src="https://github.com/user-attachments/assets/9bf04394-e977-43b1-a244-f5925d7f3002" />
