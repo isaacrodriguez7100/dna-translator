@@ -82,7 +82,7 @@ Option:
 - GC content
 - AT content
 
-![Screenshot 2026-06-26 at 4.39.53 PM.png](../../Desktop/Screenshots/Screenshot%202026-06-26%20at%204.39.53%E2%80%AFPM.png)
+![DNA Statistics Example](examples/statistics.png)
 
 ---
 
@@ -108,7 +108,7 @@ Option:
 - Translation into amino acids
 - Protein count
 
-![Screenshot 2026-06-26 at 4.39.16 PM.png](../../Desktop/Screenshots/Screenshot%202026-06-26%20at%204.39.16%E2%80%AFPM.png)
+![DNA Translation Example](examples/translation.png)
 
 ## 🗺️ Roadmap
 
