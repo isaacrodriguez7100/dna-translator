@@ -114,7 +114,6 @@ while True:
                     utr_5_grouping.append(utr_5[x:x+3])
                 utr_5_final = " ".join(utr_5_grouping)
 
-                utr_3 = "TBD"
                 #formatting
                 protein_sequence = " ".join(protein_coding_region)
                 num_char_in_utr_5_final = len(utr_5_final) + remainder + 2
